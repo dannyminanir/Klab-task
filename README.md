@@ -116,24 +116,7 @@ The app runs on **http://localhost:5173** and talks to the API at the URL set in
 - **Swagger UI (`springdoc-openapi`)** is wired in for interactive API testing and documentation at `/swagger-ui.html`, with `@Operation` annotations on each endpoint and example payloads on the request DTO.
 - **Optimistic UI updates** on the frontend (status toggle and delete update state immediately, then roll back on API failure) for a snappier feel without a heavier state library.
 
-## Optional features implemented
+## Deployment 
 
-- Form validation (required title, length limits) on both frontend and backend
-- Status filtering (All / Pending / Completed)
-- Priority levels with visual indicators
-- Clean, custom-designed UI (not a default component-library look)
-
-## Not implemented (left as-is per challenge scope)
-
-- Authentication
-- Pagination (not needed at this task volume)
-- Automated test suite beyond the Spring context smoke test
-- Deployment (add your live demo link here if you deploy it)
-
-## Deployment (optional)
-
-If you deploy this, common free-tier options:
-- **Backend**: Render, Railway, or Fly.io (with a managed MySQL add-on, e.g. PlanetScale or Railway MySQL)
-- **Frontend**: Vercel or Netlify (set `VITE_API_URL` to your deployed backend URL as an environment variable)
-
-Add your live demo link here once deployed: `[Live demo](your-url-here)`
+- **Backend**: AWS
+- **Frontend**: Vercel
